@@ -53,13 +53,18 @@ let isBusy = false;
 
 // ── Core: Send message and stream response ──────────────────────────────
 async function chat(sessionId, text, chatId) {
+  // Inject feedback into every message so the agent always has it
+  const feedback = loadFeedbackFile();
+  const feedbackPrefix = feedback.trim() ? `[JACK'S RULES - follow these exactly:\n${feedback.slice(-500)}\n]\n\n` : '';
+  const messageText = feedbackPrefix + text;
+
   // THE KEY PATTERN: open stream FIRST, then send message
   const stream = await client.beta.sessions.events.stream(sessionId);
 
   await client.beta.sessions.events.send(sessionId, {
     events: [{
       type: 'user.message',
-      content: [{ type: 'text', text }],
+      content: [{ type: 'text', text: messageText }],
     }],
   });
 
@@ -374,6 +379,10 @@ async function runPrepTask() {
 }
 
 // ── Feedback ────────────────────────────────────────────────────────────
+function loadFeedbackFile() {
+  try { return readFileSync(FEEDBACK_FILE, 'utf8'); } catch { return ''; }
+}
+
 function saveFeedback(text) {
   const lower = text.toLowerCase();
   let feedbackType = null;
