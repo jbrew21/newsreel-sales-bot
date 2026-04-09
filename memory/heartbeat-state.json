@@ -1,0 +1,29 @@
+{
+  "last_run": null,
+  "states_searched_libraries": [],
+  "states_searched_schools": [],
+  "states_queue_libraries": [
+    "Connecticut", "New York", "Massachusetts", "Pennsylvania", "California",
+    "Texas", "Illinois", "Ohio", "Michigan", "Colorado",
+    "Washington", "Oregon", "Minnesota", "Virginia", "Maryland",
+    "Georgia", "North Carolina", "Florida", "Arizona", "New Mexico",
+    "Wisconsin", "Iowa", "Missouri", "Indiana", "Tennessee",
+    "Kentucky", "Louisiana", "Alabama", "South Carolina", "Nevada",
+    "Utah", "Oklahoma", "Kansas", "Nebraska", "Montana",
+    "Idaho", "Wyoming", "New Hampshire", "Vermont", "Maine",
+    "Rhode Island", "Delaware", "Hawaii", "Alaska", "West Virginia",
+    "Mississippi", "Arkansas", "North Dakota", "South Dakota"
+  ],
+  "states_queue_schools": [
+    "New Jersey", "Illinois", "Texas", "California", "Florida",
+    "Colorado", "Washington", "Connecticut", "Delaware", "Ohio",
+    "Minnesota", "New York", "Pennsylvania", "Massachusetts", "Virginia",
+    "Maryland", "Georgia", "North Carolina", "Michigan", "Oregon",
+    "Arizona", "Wisconsin", "Iowa", "Missouri", "Indiana"
+  ],
+  "total_prospects_found": 0,
+  "total_emails_drafted": 0,
+  "total_emails_approved": 0,
+  "total_emails_rejected": 0,
+  "daily_log": []
+}

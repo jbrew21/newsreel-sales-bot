@@ -1,0 +1,7 @@
+node_modules/
+.secrets
+sessions.json
+memory/*.md
+!memory/priority-map.md
+!memory/tasks.md
+!memory/feedback.md

@@ -1,0 +1,16 @@
+{
+  "name": "newsreel-sales-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot bridging to Newsreel Managed Sales Agents",
+  "main": "bot-v2.js",
+  "type": "module",
+  "scripts": {
+    "start": "node bot-v2.js",
+    "dev": "node --watch bot-v2.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.86.1",
+    "grammy": "^1.42.0",
+    "node-cron": "^3.0.3"
+  }
+}
